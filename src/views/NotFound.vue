@@ -1,22 +1,13 @@
 <!-------------------------------------------------SCRIPT---------------------------------------------------->
-<script setup lang="ts">
-
-import {onMounted} from "vue";
-
-onMounted(() => {
-  setTimeout(() => {
-    window.close();
-  }, 1000)
-})
+<script scope lang="ts">
 
 </script>
 
 <!-------------------------------------------------TEMPLATE-------------------------------------------------->
 <template>
-  <h2>Success! Thank you for login!</h2>
+  <h2>404</h2>
+  <h3>Page not found</h3>
 </template>
 
 <!-------------------------------------------------STYLE----------------------------------------------------->
-<style scoped>
-
-</style>
+<style></style>

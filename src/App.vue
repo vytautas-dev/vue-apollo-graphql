@@ -7,8 +7,8 @@
   <nav>
     <RouterLink to="/"> Home </RouterLink>
     <RouterLink to="/login"> Login </RouterLink>
-    <RouterLink to="/auth/success"> Login Success </RouterLink>
     <RouterLink to="/dashboard"> Dashboard </RouterLink>
+    <a href="http://localhost:5000/auth/logout" @click="">Logout</a>
   </nav>
 </div>
   <RouterView />

@@ -1,0 +1,5 @@
+type Query {
+    book(_id: ID!): Book
+    books(bookInput: BookInput): [Book]
+    booksByUserId(_id: ID!, limit: Int!, offset: Int!): [Book]
+}

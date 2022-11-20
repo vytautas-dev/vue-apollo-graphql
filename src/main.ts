@@ -34,8 +34,6 @@ const app = createApp({
     render: () => h(App)
 })
 
-app.use(pinia)
+app.use(pinia).use(router).mount('#app');
 
-app.use(router)
 
-app.mount("#app")

@@ -2,9 +2,16 @@ import { defineStore } from "pinia";
 import axios from 'axios';
 
 export const userAuthStore = defineStore("userAuthStore", {
-    state: () => ({
-        user: null,
-    }),
+    state: () => {
+        let user: any = localStorage.getItem("user");
+        if(user) {
+            user = JSON.parse(user);
+            return user
+        } else {
+            user = null;
+            return user
+        }
+    },
     actions: {
     async fetchUser(){
         const config = {
