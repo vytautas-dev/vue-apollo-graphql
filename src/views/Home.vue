@@ -5,9 +5,9 @@
 
 <!-------------------------------------------------TEMPLATE-------------------------------------------------->
 <template>
-  <q-page padding>
-    <Container>
-        <h3>Home Page</h3>
+  <q-page padding >
+    <h4>Home Page</h4>
+    <Container >
     </Container>
   </q-page>
 </template>

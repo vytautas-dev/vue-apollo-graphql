@@ -1,5 +1,5 @@
 <template>
-<q-layout view="hHh lpR fFf">
+<q-layout view="hHh lpR fFf" >
 
 <q-header elevated class="bg-primary text-white" height-hint="98">
   <q-toolbar>
@@ -18,8 +18,8 @@
   </q-tabs>
 </q-header>
 
-<q-page-container>
-  <RouterView />
+<q-page-container class="window-width"  >
+  <RouterView   />
 </q-page-container>
 
 </q-layout>

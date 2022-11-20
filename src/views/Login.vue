@@ -27,8 +27,8 @@ const redirectToGoogleSSO = async () => {
 <!-------------------------------------------------TEMPLATE-------------------------------------------------->
 <template>
   <q-page padding>
+    <h4>Login Page</h4>
     <Container>
-      <h3>Login Page</h3>
       <q-btn color="primary" label="Sign in with Google" @click="redirectToGoogleSSO" v-if="!userStore.user" />
       <div v-else><p>{{userStore.user.username}}</p></div>
     </Container>
