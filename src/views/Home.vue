@@ -7,8 +7,6 @@
 <template>
   <q-page padding >
     <h4>Home Page</h4>
-    <Container >
-    </Container>
   </q-page>
 </template>
 
