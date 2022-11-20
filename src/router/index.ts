@@ -1,4 +1,5 @@
 import { createRouter, createWebHistory } from "vue-router";
+import MainLayout from '../layouts/MainLayout.vue';
 import Home from '../views/Home.vue'
 import Login from '../views/Login.vue'
 import LoginSuccess from '../views/LoginSuccess.vue'
@@ -13,23 +14,15 @@ const router = createRouter({
     routes: [
         {
             path: "/",
-            name: "Home",
-            component: Home,
-        },
-        {
-            path: '/login',
-            name: "Login",
-            component: Login
-        },
-        {
-            path: '/auth/success',
-            name: "LoginSuccess",
-            component: LoginSuccess
-        },
-        {
-            path: '/dashboard',
-            name: "Dashboard",
-            component: Dashboard
+            name: "MainLayout",
+            component: MainLayout,
+            children: [
+                {path: '', name: 'Home', component: Home},
+                {path: 'login', name: 'Login', component: Login},
+                {path: 'auth/success', name: 'LoginSuccess', component: LoginSuccess},
+                {path: 'dashboard', name: 'Dashboard', component: Dashboard},
+
+            ]
         },
         {
             path: '/:catchAll(.*)',

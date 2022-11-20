@@ -6,6 +6,14 @@ import './assets/main.css';
 import { ApolloClient, createHttpLink, InMemoryCache } from "@apollo/client/core";
 import router from "./router";
 
+/*quasar framework*/
+import { Quasar } from 'quasar'
+import '@quasar/extras/roboto-font/roboto-font.css'
+import '@quasar/extras/material-icons/material-icons.css'
+import 'quasar/src/css/index.sass'
+
+import './assets/global.css'
+
 //state management
 const pinia = createPinia();
 
@@ -34,6 +42,6 @@ const app = createApp({
     render: () => h(App)
 })
 
-app.use(pinia).use(router).mount('#app');
+app.use(pinia).use(router).use(Quasar, {plugins: {}}).mount('#app')
 
 
